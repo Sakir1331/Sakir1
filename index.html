@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة العائلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لعبة العائلة</h1>
+        <div class="welcome show">
+            <p>أهلاً وسهلاً بك في لعبة العائلة! اختر من أي فرد من العائلة أنت:</p>
+            <select id="familyMember">
+                <option disabled selected>اختر اسمك...</option>
+                <option>حمود حيدر ابو صقر</option>
+                <option>ام صقر</option>
+                <option>ام يزن</option>
+                <option>صقر</option>
+                <option>علي</option>
+                <option>براءة</option>
+                <option>محمد</option>
+                <option>يزن</option>
+                <option>راكان</option>
+            </select>
+            <button onclick="startQuiz()">ابدأ اللعبة</button>
+        </div>
+
+        <div class="not-allowed">
+            <p>انت بالاول تعلم تقرا وبعدين تعال هههههههههههه</p>
+            <button onclick="goBack()">رجوع</button>
+        </div>
+
+        <div class="question-container">
+            <p id="greeting"></p>
+            <p class="question" id="questionText"></p>
+            <div class="options" id="options"></div>
+        </div>
+
+        <div class="result-container">
+            <p id="finalResult"></p>
+            <p>اللهم احفظ لي عائلتي بعينك التي لا تنام، وبارك لنا في أعمارنا واجمعنا على الخير دائمًا.</p>
+            <button onclick="restartQuiz()">إعادة اللعب</button>
+            <button onclick="closeApp()">إغلاق</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
